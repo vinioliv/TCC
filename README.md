@@ -35,7 +35,7 @@ Para inciar o projeto, entre nos respectivos diretórios e digite o comando:
 ```
 npm start
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 **Front-end: ReactNative.js**
 
