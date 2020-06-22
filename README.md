@@ -34,7 +34,7 @@ dbtcc_sql
 Para inciar o projeto, entre nos respectivos diretórios e digite o comando:
 ```
 npm start
-
+```
 ## Tecnologias Utilizadas
 
 **Front-end: ReactNative.js**
