@@ -4,13 +4,13 @@ Projeto de TCC - Universidade Santa Cecília
 Integrantes: [Gabriel Alves](https://github.com/alvxres) |
 [Samuel Rodrigues](https://github.com/Mkr165) |
 [Vinicius Oliveira](https://github.com/vinioliv) |
-[Whendy Volpi] 
+Whendy Volpi
 
 ## Descrição do projeto
 
 Aplicação intermediária para vendas de produtos e serviços entre pessoas com foco na personalização e experiência para o negócio do usuário.
 
-Setup
+##Setup
 
 ## 1) Clonar o repositório
 ```
@@ -27,12 +27,9 @@ Navegue até o diretório backend e baixe as dependências:
 
 ## 4) Iniciar o script de criação do banco
 Utilize o phpmyadmin para iniciar o arquivo
-
 ```
 dbtcc_sql
-
 ```
-
 ## 5) Iniciar o projeto
 Para inciar o projeto, entre nos respectivos diretórios e digite o comando:
 ```
@@ -46,4 +43,3 @@ npm start
 
 **Database: MySQL**
 
-```
