@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Tempo de geração: 22-Jun-2020 às 15:49
+-- Tempo de geração: 26-Jun-2020 às 17:43
 -- Versão do servidor: 8.0.18
 -- versão do PHP: 7.3.12
 
@@ -86,6 +86,7 @@ CREATE TABLE IF NOT EXISTS `tb_chat` (
 
 DROP TABLE IF EXISTS `tb_endereco`;
 CREATE TABLE IF NOT EXISTS `tb_endereco` (
+  `id_endereco` int(20) NOT NULL AUTO_INCREMENT,
   `cd_usuario` int(11) NOT NULL,
   `cd_cep` int(20) NOT NULL,
   `sg_estado` varchar(100) NOT NULL,
@@ -93,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `tb_endereco` (
   `nm_rua` varchar(100) NOT NULL,
   `nr_casa` int(10) NOT NULL,
   `ds_complemento` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`cd_usuario`),
+  PRIMARY KEY (`id_endereco`),
   KEY `cd_usuario` (`cd_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -142,6 +143,14 @@ CREATE TABLE IF NOT EXISTS `tb_tipo_usuario` (
   PRIMARY KEY (`cd_tipo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Extraindo dados da tabela `tb_tipo_usuario`
+--
+
+INSERT INTO `tb_tipo_usuario` (`cd_tipo`, `nm_tipo`) VALUES
+(1, 'Cliente'),
+(2, 'Fornecedor');
+
 -- --------------------------------------------------------
 
 --
@@ -160,7 +169,17 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   PRIMARY KEY (`cd_usuario`),
   UNIQUE KEY `nm_email` (`nm_email`),
   KEY `cd_tipo_usuario` (`cd_tipo_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='tabela usuário';
+) ENGINE=InnoDB AUTO_INCREMENT=131 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='tabela usuário';
+
+--
+-- Extraindo dados da tabela `tb_usuario`
+--
+
+INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_email`, `nm_senha`, `dt_nascimento`, `cd_tipo_usuario`, `nm_img`) VALUES
+(117, 'Vinicius', 'vini@hotmail.com', 'senha123', '0000-00-00', 1, 'teste.jpg'),
+(127, 'Vinicius', 'vini@hotmai.com', '33558566', '0000-00-00', 1, 'caminho'),
+(129, 'Vinicius', 'vini@hotmailllll.com', '33558566', '0000-00-00', 1, 'caminho'),
+(130, 'Vinicius', 'vini@hlll.com', '33558566', '0000-00-00', 1, 'caminho');
 
 -- --------------------------------------------------------
 
