@@ -8,8 +8,9 @@ Whendy Volpi
 
 ## Descrição do projeto
 
+```
 Aplicação intermediária para vendas de produtos e serviços entre pessoas com foco na personalização e experiência para o negócio do usuário.
-
+```
 ##Setup
 
 ## 1) Clonar o repositório
