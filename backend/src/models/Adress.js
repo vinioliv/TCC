@@ -6,7 +6,7 @@ class Adress extends Model{}
          
 Adress.init({
 
-cd_endereco:{
+id_endereco:{
      autoIncrement: true,
      primaryKey: true,
      type: DataTypes.INTEGER,
