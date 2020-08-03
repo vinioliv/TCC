@@ -8,17 +8,23 @@ Advertiser.init({
 
 cd_vendedor:{
     type: DataTypes.INTEGER,
+    allowNull: false,
+    autoIncrement: true,
+    primaryKey: true
+},
+nm_negocio:{
+    type: DataTypes.STRING,
     allowNull: false
 },
-cpf_vendedor:{
-    type: DataTypes.INTEGER,
+cd_cpf:{
+    type: DataTypes.STRING,
     allowNull: false
 },
 ds_perfil: {
     type: DataTypes.STRING,
     allowNull: true
 },
-nm_img_negocio: {
+nm_img: {
     type: DataTypes.STRING,
     allowNull: true
 }

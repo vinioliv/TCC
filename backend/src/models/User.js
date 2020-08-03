@@ -26,7 +26,7 @@ nm_senha:{
         allowNull: false
 },
 dt_nascimento:{
-        type: DataTypes.INTEGER,
+        type: DataTypes.DATEONLY,
         allowNull: false
 },
 nm_img:{
