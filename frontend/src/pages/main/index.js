@@ -23,6 +23,7 @@ import {scrollInterpolators, animatedStyles} from './../../utils/animations';
  
 import {
   Container,
+  ContainerCategoria,
   VideoCardList,
   ContainerForm,
   ContainerLogo,
@@ -321,24 +322,39 @@ export default class Main extends Component {
               <ScrollView
                 horizontal={true}
                 showsHorizontalScrollIndicator={true}
-                pagingEnabled={true}
-                style={{flex: 1, height: 120, backgroundColor: '#fff'}}>
-                <Image
-                  source={{uri: 'https://reactjs.org/logo-og.png'}}
-                  style={{width: 110, height: 110}}
-                />
-                <Image
-                  source={{uri: 'https://reactjs.org/logo-og.png'}}
-                  style={{width: 110, height: 110}}
-                />
-                <Image
-                  source={{uri: 'https://reactjs.org/logo-og.png'}}
-                  style={{width: 110, height: 110}}
-                />
-                <Image
-                  source={{uri: 'https://reactjs.org/logo-og.png'}}
-                  style={{width: 110, height: 110}}
-                />
+                pagingEnabled={false}
+                style={{flex: 1, height: 80, }}>
+                <ContainerCategoria>
+                  <Image
+                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    style={{width: 30, height: 30}}
+                  />
+                </ContainerCategoria>
+                <ContainerCategoria>
+                  <Image
+                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    style={{width: 30, height: 30}}
+                  />
+                </ContainerCategoria>
+                <ContainerCategoria>
+                  <Image
+                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    style={{width: 30, height: 30}}
+                  />
+                </ContainerCategoria>
+                <ContainerCategoria>
+                  <Image
+                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    style={{width: 30, height: 30}}
+                  />
+                </ContainerCategoria>
+                <ContainerCategoria>
+                  <Image
+                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    style={{width: 30, height: 30}}
+                  />
+                </ContainerCategoria>
+                 
               </ScrollView>
 
               {example2}

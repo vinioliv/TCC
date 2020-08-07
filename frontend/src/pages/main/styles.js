@@ -8,6 +8,16 @@ flex:1;
 width:100%;
 height: 10%;
 `
+const ContainerCategoria = styled.View`
+ margin-left:16px;
+ background-color:#fff;
+ border-radius: 8px;
+ width:60px;
+ height:60px;
+ justify-content:center; 
+ align-items:center;
+  
+`
 const ContainerLogo = styled.View`
 flex: 1;
 width:100%;
@@ -42,4 +52,4 @@ const SignUpLinkText1 = styled.Text`
   color: #999;
 `;
 
-export { Container, ContainerForm, ContainerLogo, VideoCardList,Logo, Input, SignUpLink, SignUpLinkText2, SignUpLinkText1};
+export { Container, ContainerForm,ContainerCategoria, ContainerLogo, VideoCardList,Logo, Input, SignUpLink, SignUpLinkText2, SignUpLinkText1};
