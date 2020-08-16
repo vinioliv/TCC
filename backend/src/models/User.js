@@ -25,10 +25,6 @@ nm_senha:{
         type: DataTypes.STRING,
         allowNull: false
 },
-dt_nascimento:{
-        type: DataTypes.DATEONLY,
-        allowNull: false
-},
 nm_img:{
         type: DataTypes.STRING,
         allowNull: true

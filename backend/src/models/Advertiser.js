@@ -24,9 +24,9 @@ ds_perfil: {
     type: DataTypes.STRING,
     allowNull: true
 },
-nm_img: {
+nm_img_negocio: {
     type: DataTypes.STRING,
-    allowNull: true
+    allowNull: false
 }
 
     },{sequelize: connection,
