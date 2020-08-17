@@ -21,7 +21,7 @@ module.exports = {
     },
     async advertiserimage(request, response){
         const img = request.file.filename
-        const cd_vendedor = request.headers.advertiserid;
+        const cd_vendedor = request.headers.advertiser;
        if(cd_vendedor != null || cd_vendedor != undefined)
        {
            await Advertiser.update({nm_img_negocio: img},{
