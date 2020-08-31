@@ -25,11 +25,9 @@ module.exports = {
         .status(200)
         .json({ msg: "Anúncio Realizado com Sucesso", id: post.cd_anuncio });
     } catch (err) {
-      return response
-        .status(500)
-        .json({
-          msg: "Falha ao realizar o anúncio, por favor tente novamente",
-        });
+      return response.status(500).json({
+        msg: "Falha ao realizar o anúncio, por favor tente novamente",
+      });
     }
   },
   async delete(request, response) {
@@ -38,10 +36,14 @@ module.exports = {
     try {
       await Post.destroy({
         where: {
-          cd_usuario: id,
+          cd_anunciante: id,
         },
       });
       return response.status(200).json({ msg: "Post excluído com sucesso" });
-    } catch (err) {return response.status.json(500)({msg: "Erro ao realizar operação, verifique seu acesso"})}
+    } catch (err) {
+      return response.status.json(500)({
+        msg: "Erro ao realizar operação, verifique seu acesso",
+      });
+    }
   },
 };
