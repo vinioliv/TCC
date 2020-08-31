@@ -35,11 +35,6 @@ ds_anuncio:{
 vl_anuncio:{
         type: DataTypes.INTEGER,
         allowNull: false
-},
-nm_img: {
-        type: DataTypes.STRING,
-        allowNull: true
-
 }
         },{sequelize: connection,
             modelName: 'tb_anuncio' })
