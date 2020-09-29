@@ -21,11 +21,16 @@ import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 
+
+
 import HomeScreen from './pages/main';
 import MypageScreen from './pages/signIn';
+import SearchScreen from './pages/search'
  
 
-const MainTabs = createBottomTabNavigator({
+
+
+const MainTabs =  createBottomTabNavigator({
     HOME: {
       screen: HomeScreen,
       navigationOptions: {
@@ -33,7 +38,7 @@ const MainTabs = createBottomTabNavigator({
       },
     },
     Buscar: {
-      screen: MypageScreen,
+      screen: SearchScreen,
       navigationOptions: {
         tabBarLabel: 'Buscar',
       },
