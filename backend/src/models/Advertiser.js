@@ -2,6 +2,7 @@ const {Model, DataTypes} = require('sequelize');
 const connection = require('../database/index')
 const User = require('./User')
 
+
 class Advertiser extends Model{}
           
 Advertiser.init({
@@ -31,6 +32,7 @@ nm_img_negocio: {
 
     },{sequelize: connection,
        modelName: 'tb_vendedor'})
+
 
 Advertiser.belongsTo(User, {foreignKey: "cd_usuario", as: "cd_usuario_fk"})
 
