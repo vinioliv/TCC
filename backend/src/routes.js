@@ -13,22 +13,20 @@ const ImageController = require('./controllers/ImageController');
 
 
 
+routes.get('/post', PostController.index);
+
+
 routes.post('/sessions', SessionController.create);
 routes.post('/registeruser', UserController.createuser);
 routes.post('/registeradvertiser', AdvertiserController.createadvertiser);
 routes.post('/adress', AdressController.createadress);
-routes.post('/post',multer(multerConfig).array('file', 5), PostController.crete);
+routes.post('/createpost',multer(multerConfig).array('file', 5), PostController.crete);
+
 
 routes.put('/profileimage', multer(multerConfig).single('file'), ImageController.userimage);
 routes.put('/advertiserimage', multer(multerConfig).single('file'), ImageController.advertiserimage);
 
-
-
-
-
-
-
-
+routes.delete('/post/:id', PostController.delete);
 
 
 module.exports = routes;

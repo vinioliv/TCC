@@ -47,6 +47,25 @@ module.exports = {
       });
     }
   },
+  async delete(request, response) {
+    const { id } = request.params;
+    const advertiserid = request.headers.advertiserid;
+    if (advertiserid == null || advertiserid == undefined) {
+      return response.status(403).json("Verifique seu acesso");
+    }
+    const exist = await Post.findAll({
+      where: { cd_anuncio: id },
+    });
+    if (exist == "") {
+      return response.status(404).json("O anúncio em questão não existe mais!");
+    } else {
+      await Post.destroy({
+        where: { cd_anuncio: id, cd_anunciante: advertiserid },
+      });
+      return response.status(200).json({ msg: "Post excluído com sucesso" });
+
+    }
+  },
 
 
 };
