@@ -1,7 +1,23 @@
 const Post = require("../models/Post.js");
 const PostImage = require("../models/PostImage.js");
+const Advertiser = require("../models/Advertiser.js");
 
 module.exports = {
+  async index(request, response) {
+    const id = request.headers.userid;
+    if (id == null || id == undefined) {
+      return response.status(403).json("Verifique seu acesso");
+    }
+    const posts = await Post.findAll({
+      where: { ic_pago: 1 },
+      include: {
+        model: PostImage,
+        required: true,
+      },
+    });
+    return response.status(200).json({ result: posts });
+  },
+
   async crete(request, response) {
     const { categoria, nome, dsanuncio, valor } = request.body;
 
@@ -13,6 +29,7 @@ module.exports = {
         nm_anuncio: nome,
         ds_anuncio: dsanuncio,
         vl_anuncio: valor,
+        ic_pago: 0,
       });
 
       request.files.forEach(async (file) => {
@@ -30,20 +47,6 @@ module.exports = {
       });
     }
   },
-  async delete(request, response) {
-    const id = request.headers.advertiser;
 
-    try {
-      await Post.destroy({
-        where: {
-          cd_anunciante: id,
-        },
-      });
-      return response.status(200).json({ msg: "Post excluído com sucesso" });
-    } catch (err) {
-      return response.status.json(500)({
-        msg: "Erro ao realizar operação, verifique seu acesso",
-      });
-    }
-  },
+
 };

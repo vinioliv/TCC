@@ -2,6 +2,8 @@ const {Model, DataTypes} = require('sequelize');
 const connection = require('../database/index');
 const Advertiser = require('./Advertiser')
 const Category = require('./Category')
+
+
 class Post extends Model{}
      
 Post.init({
@@ -35,12 +37,21 @@ ds_anuncio:{
 vl_anuncio:{
         type: DataTypes.INTEGER,
         allowNull: false
+},
+ic_pago:{
+        type: DataTypes.INTEGER,
+        allowNull: false
 }
         },{sequelize: connection,
             modelName: 'tb_anuncio' })
-  
+
+           
+Advertiser.hasMany(Post, { foreignKey: "cd_anunciante", as: "cd_anunciante_fk" })
+
+
 Post.belongsTo(Advertiser, {foreignKey: "cd_anunciante", as: "cd_anunciante_fk"})
 Post.belongsTo(Category, {foreignKey: "cd_categoria", as: "cd_categoria_fk"})
+
 Post.sync();
 
 module.exports = Post;
