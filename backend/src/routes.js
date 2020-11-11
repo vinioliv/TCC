@@ -13,7 +13,9 @@ const ImageController = require('./controllers/ImageController');
 
 
 
+
 routes.get('/post', PostController.index);
+routes.get('/filter', PostController.filter);
 
 
 routes.post('/sessions', SessionController.create);

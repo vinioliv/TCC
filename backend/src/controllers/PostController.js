@@ -1,6 +1,6 @@
 const Post = require("../models/Post.js");
 const PostImage = require("../models/PostImage.js");
-const Advertiser = require("../models/Advertiser.js");
+const { Op } = require("sequelize");
 
 module.exports = {
   async index(request, response) {
@@ -12,7 +12,6 @@ module.exports = {
       where: { ic_pago: 1 },
       include: {
         model: PostImage,
-        required: true,
       },
     });
     return response.status(200).json({ result: posts });
@@ -63,9 +62,19 @@ module.exports = {
         where: { cd_anuncio: id, cd_anunciante: advertiserid },
       });
       return response.status(200).json({ msg: "Post excluído com sucesso" });
-
     }
   },
+  
+  async filter(request, response) {
+    const { category, name } = request.query;
 
-
+    const posts = await Post.findAll({
+      where: { cd_categoria: category, nm_anuncio: { [Op.like]: `${name}%` } },
+      include: {
+        model: PostImage,
+      },
+      order: [["ic_pago", "Desc"]],
+    });
+    return response.status(200).json({ result: posts });
+  },
 };
