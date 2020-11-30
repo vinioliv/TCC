@@ -1,7 +1,8 @@
 import React from 'react';
 import {Text, View, FlatList, Image, TouchableHighlight} from 'react-native';
-
 import Feather from 'react-native-vector-icons/Feather';
+import Icon from 'react-native-vector-icons/FontAwesome';
+ 
 import {TextInput} from 'react-native-gesture-handler';
 
 import Star from 'react-native-star-view';
@@ -10,12 +11,14 @@ import styles from './styles';
 import adImg from '../../images/anuncio.png';
 import clickDetail from '../../images/clicktoaccess.png';
 
+
+
 export default function Search() {
   return (
     <View style={styles.container}>
 
       <View style={styles.headerContainer}>
-        <Text style={styles.headerText}>O que você procura?</Text>
+        <Text style={styles.headerText}>O que você procura?</Text>        
         <Feather name="x" size={43} color="#FF6969" />
       </View>
 
@@ -31,8 +34,7 @@ export default function Search() {
         </TouchableHighlight>
       </View>
 
-      
-
+     
       <FlatList
         data={[1, 2, 3, 4]}
         style={styles.articleContainer}

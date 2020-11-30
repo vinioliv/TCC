@@ -2,7 +2,7 @@ export const ENTRIES1 = [
     {
         title: 'Beautiful and dramatic Antelope Canyon',
         subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-        illustration: 'https://i.imgur.com/UYiroysl.jpg'
+        illustration: 'https://image.freepik.com/fotos-gratis/engenheiro-de-ti-trabalhando-com-seu-pc_1098-21511.jpg'
     },
     {
         title: 'Earlier this morning, NYC',
@@ -33,19 +33,19 @@ export const ENTRIES1 = [
 
 export const ENTRIES2 = [
     {
-        title: 'Favourites landscapes 1',
-        subtitle: 'Lorem ipsum dolor sit amet',
-        illustration: 'https://i.imgur.com/SsJmZ9jl.jpg'
+        title: 'Desenvolvedor full stack freelancer',
+        subtitle: 'Desenvolvimento de apps e site, veja mais clicando aqui.',
+        illustration: 'https://image.freepik.com/fotos-gratis/engenheiro-de-ti-trabalhando-com-seu-pc_1098-21511.jpg'
     },
     {
-        title: 'Favourites landscapes 2',
-        subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-        illustration: 'https://i.imgur.com/5tj6S7Ol.jpg'
+        title: 'Seu Zé Encanador',
+        subtitle: 'Mais de 20 anos de experiência no mercado! ',
+        illustration: 'https://image.freepik.com/fotos-gratis/alegre-olhando-franzido-caucasiano-senior-macho-carpinteiro-apontando-o-dedo-indicador-carregando-trabalho-equipamento-em-a-cintura-eletricista-barbudo-idoso-sorridente-posando-com-luvas-de-protecao-e-cinto-de-ferramentas_343059-2728.jpg'
     },
     {
-        title: 'Favourites landscapes 3',
-        subtitle: 'Lorem ipsum dolor sit amet et nuncat',
-        illustration: 'https://i.imgur.com/pmSqIFZl.jpg'
+        title: 'Eletricista 24h',
+        subtitle: 'Entre em contato agora e solicite uma visita!',
+        illustration: 'https://image.freepik.com/fotos-gratis/homem-um-tecnico-eletrico-trabalhando-em-um-painel-de-distribuicao-com-fusiveis-instalacao-e-conexao-de-equipamentos-eletricos_169016-3859.jpg'
     },
     {
         title: 'Favourites landscapes 4',

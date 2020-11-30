@@ -12,11 +12,10 @@ const ContainerCategoria = styled.View`
  margin-left:16px;
  background-color:#fff;
  border-radius: 8px;
- width:60px;
- height:60px;
+ width:78px;
+ height:70px;
  justify-content:center; 
- align-items:center;
-  
+ align-items:center;  
 `
 const ContainerLogo = styled.View`
 flex: 1;
@@ -48,8 +47,18 @@ const SignUpLinkText2 = styled.Text`
   color: #FC6663;
 `;
 
+const TituloSecao = styled.Text`
+ font-size:12px;
+ background-color: #FF6969;
+ color:#FFF;
+ border-radius:4px;
+ padding:2px;
+ margin-top:8px;
+
+`;
+
 const SignUpLinkText1 = styled.Text`
   color: #999;
 `;
 
-export { Container, ContainerForm,ContainerCategoria, ContainerLogo, VideoCardList,Logo, Input, SignUpLink, SignUpLinkText2, SignUpLinkText1};
+export { TituloSecao,Container, ContainerForm,ContainerCategoria, ContainerLogo, VideoCardList,Logo, Input, SignUpLink, SignUpLinkText2, SignUpLinkText1};

@@ -20,10 +20,14 @@ import BannerHome from '../../components/BannerHome'
 import styles, {colors} from '././../../assets/styles/index.style';
 import {ENTRIES1, ENTRIES2, ENTRIES3} from './../../utils/entries';
 import {scrollInterpolators, animatedStyles} from './../../utils/animations';
- 
+import img1 from './../../images/settings-symbol-of-a-cross-of-tools.png' 
+import img2 from './../../images/pc.png' 
+import img3 from './../../images/car.png' 
+import img4 from './../../images/esfregao-de-limpeza.png' 
 import {
   Container,
   ContainerCategoria,
+  TituloSecao,
   VideoCardList,
   ContainerForm,
   ContainerLogo,
@@ -323,30 +327,34 @@ export default class Main extends Component {
                 horizontal={true}
                 showsHorizontalScrollIndicator={true}
                 pagingEnabled={false}
-                style={{flex: 1, height: 80, }}>
+                style={{flex: 1, height: 80, marginTop:8,}}>
                 <ContainerCategoria>
                   <Image
-                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    source={img1}
                     style={{width: 30, height: 30}}
                   />
+                   <TituloSecao>Manutenção</TituloSecao>
                 </ContainerCategoria>
                 <ContainerCategoria>
                   <Image
-                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    source={img2}
                     style={{width: 30, height: 30}}
                   />
+                  <TituloSecao>Tecnologia</TituloSecao>
                 </ContainerCategoria>
                 <ContainerCategoria>
                   <Image
-                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    source={img3}
                     style={{width: 30, height: 30}}
                   />
+                  <TituloSecao>Transporte</TituloSecao>
                 </ContainerCategoria>
                 <ContainerCategoria>
                   <Image
-                    source={{uri: 'https://reactjs.org/logo-og.png'}}
+                    source={img4}
                     style={{width: 30, height: 30}}
                   />
+                  <TituloSecao>Limpeza</TituloSecao>
                 </ContainerCategoria>
                 <ContainerCategoria>
                   <Image

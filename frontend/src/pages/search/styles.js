@@ -20,7 +20,7 @@ export default StyleSheet.create({
   articleContainer: {
     marginTop: 20,
   },
-  adContainer: {marginTop: 20},
+  adContainer: {marginTop: 20,paddingBottom:20},
   adInfo: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -33,12 +33,12 @@ export default StyleSheet.create({
     zIndex: 1,
   },
   moreDetail: {
-    width: 150,
-    height: 40,
+    width: 144,
+    height: 30,
     zIndex: 2,
     position: 'absolute',
     top: 110,
-    left: 225,
+    left: 165,
   },
   adText: {
     color: '#707070',
