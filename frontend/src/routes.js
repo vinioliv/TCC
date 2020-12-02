@@ -17,7 +17,7 @@
 
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
- 
+import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import Feather from 'react-native-vector-icons/Feather';
@@ -26,19 +26,28 @@ import Feather from 'react-native-vector-icons/Feather';
 import HomeScreen from './pages/main';
 import MypageScreen from './pages/signIn';
 import SearchScreen from './pages/search'
- 
+import Anuncio from './pages/anuncio'
 
 
 
 const MainTabs =  createBottomTabNavigator({
     HOME: {
-      screen: HomeScreen,
-      navigationOptions: {
-        tabBarLabel: 'HOME',
-        tabBarIcon: ({ tintColor }) => (
-          <Feather size={20} color={tintColor} name="home" /> 
-        )
-      },     
+      screen: createStackNavigator({
+        HomeScreen,
+        Anuncio
+      },
+      {
+        navigationOptions: {
+          tabBarLabel: 'HOME',
+          tabBarIcon: ({ tintColor }) => (
+            <Feather size={20} color={tintColor} name="home" /> 
+          )
+        },  
+      }
+      )
+      
+      
+        
     },
     Buscar: {
       screen: SearchScreen,
