@@ -81,7 +81,7 @@ export default function Anuncio() {
 
 Anuncio.navigationOptions = ({navigation}) => ({
   headerBackTitleVisible: false,
-  title: 'SOBRE',
+  title: 'REVIEWS',
   headerTitleAlign: 'right',
   headerStyle: {
     shadowRadius: 0,
@@ -105,3 +105,4 @@ Anuncio.navigationOptions = ({navigation}) => ({
     </View>
   ),
 });
+ 
