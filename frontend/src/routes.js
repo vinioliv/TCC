@@ -32,6 +32,8 @@ import SearchScreen from './pages/search'
 import Anuncio from './pages/anuncio'
 import AnuncioReview from './pages/anuncio-reviews'
 import AnunciosService from './pages/anuncio-servicos'
+import SignUpAdress from './pages/signUpAdress/index'
+import RegisterProcutService from './pages/registerProductService/index'
 
 const MainTabs =  createBottomTabNavigator({
     HOME: {
