@@ -22,7 +22,10 @@ import { createBottomTabNavigator,createMaterialTopTabNavigator } from 'react-na
 
 import Feather from 'react-native-vector-icons/Feather';
 
-
+import {
+   
+  TouchableHighlight,
+} from 'react-native';
 import HomeScreen from './pages/main';
 import MypageScreen from './pages/signIn';
 import SearchScreen from './pages/search'
@@ -34,10 +37,10 @@ const MainTabs =  createBottomTabNavigator({
     HOME: {
       screen: createStackNavigator({
         HomeScreen,
-        ANUNCIO: {
+        ANÚNCIO: {
           screen: createStackNavigator(
             {
-              ANUNCIO: {
+              ANÚNCIO: {
                 screen: createMaterialTopTabNavigator(
                   {
                     Anuncio,
@@ -75,6 +78,11 @@ const MainTabs =  createBottomTabNavigator({
             },
             {
               navigationOptions: {
+                title: 'anúncio',                
+                headerTitleAlign: 'right',
+                headerStyle: {
+                },
+                 
                 tabBarIcon: ({ tintColor }) => (
                   <MaterialIcons
                     name="assignment"

@@ -51,22 +51,34 @@ export default function Anuncio() {
           <ContainerConteudo>
             <Content>
               <Text>
-
-                  
+                REVIEW EXEMPLO:
+                <View style={{flexDirection: 'row', marginRight: 16}}>
+                  <Feather color="#F01" size={15} name="star" />
+                  <Feather color="#F01" size={15} name="star" />
+                  <Feather color="#F01" size={15} name="star" />
+                  <Feather color="#F01" size={15} name="star" />
+                  <Feather color="#707070" size={15} name="star" />
+                </View>   
+                - 10/10/2020     
+              </Text>
+              <Text>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Cras varius convallis dui sit amet euismod. 
                 Donec placerat rhoncus eros ac feugiat.
               </Text>
+              <Text></Text>
               <Text>
-
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Cras varius convallis dui sit amet euismod. 
-                Donec placerat rhoncus eros ac feugiat.
+                REVIEW EXEMPLO:
+                <View style={{flexDirection: 'row', marginRight: 16}}>
+                  <Feather color="#F01" size={15} name="star" />
+                  <Feather color="#F01" size={15} name="star" />
+                  <Feather color="#F01" size={15} name="star" />
+                  <Feather color="#707070" size={15} name="star" />
+                  <Feather color="#707070" size={15} name="star" />
+                </View>  
+                - 01/12/2020               
               </Text>
               <Text>
-
-
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Cras varius convallis dui sit amet euismod. 
                 Donec placerat rhoncus eros ac feugiat.
@@ -105,4 +117,3 @@ Anuncio.navigationOptions = ({navigation}) => ({
     </View>
   ),
 });
- 

@@ -17,7 +17,9 @@ import {
   BannerTopImg,
   ContainerImg,
   Content,
-  TituloSecao,
+  TituloAnuncio,
+  TextoConteudo,
+ 
   VideoCardList,
   ContainerForm,
   ContainerLogo,
@@ -50,27 +52,20 @@ export default function Anuncio() {
           </ContainerImg>
           <ContainerConteudo>
             <Content>
-              <Text>
-
-                  
+              <TituloAnuncio>
+              Transporte Particular Nome Grande Exemplo
+              </TituloAnuncio>
+              <TextoConteudo>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Cras varius convallis dui sit amet euismod. 
                 Donec placerat rhoncus eros ac feugiat.
-              </Text>
-              <Text>
-
-
+              </TextoConteudo>
+               
+              <TextoConteudo>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Cras varius convallis dui sit amet euismod. 
                 Donec placerat rhoncus eros ac feugiat.
-              </Text>
-              <Text>
-
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Cras varius convallis dui sit amet euismod. 
-                Donec placerat rhoncus eros ac feugiat.
-              </Text>
+              </TextoConteudo>
             </Content>
           </ContainerConteudo>
         </SafeAreaView>

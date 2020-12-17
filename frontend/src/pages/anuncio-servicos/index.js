@@ -8,6 +8,7 @@ import {
   SafeAreaView,
   Image,
   TouchableHighlight,
+  Button,
 } from 'react-native';
 import styles, {colors} from '././../../assets/styles/index.style';
 import {
@@ -17,17 +18,8 @@ import {
   BannerTopImg,
   ContainerImg,
   Content,
-  TituloSecao,
-  VideoCardList,
-  ContainerForm,
-  ContainerLogo,
-  Input,
-  ErrorMessage,
-  Button,
-  ButtonText,
-  SignUpLink,
-  SignUpLinkText1,
-  SignUpLinkText2,
+  BotaoPedido,
+  TextoBotaoPedido,
 } from './styles';
 import Feather from 'react-native-vector-icons/Feather';
 import bannerTop from '../../images/anuncio.png';
@@ -50,27 +42,63 @@ export default function Anuncio() {
           </ContainerImg>
           <ContainerConteudo>
             <Content>
-              <Text>
+              <TouchableHighlight
+               onPress={() => { alert(`Clique em Transporte para shows e eventos'`); }}
+                style={{
+                  height: 40,
+                  width: 260,
+                  borderRadius: 24,
+                  backgroundColor: '#fff',
+                  shadowColor: '#000',
+                  marginLeft: 50,
+                  marginRight: 50,
+                  elevation: 2,
+                  marginBottom:16,
+                  marginTop:16
 
                   
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Cras varius convallis dui sit amet euismod. 
-                Donec placerat rhoncus eros ac feugiat.
-              </Text>
-              <Text>
-
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Cras varius convallis dui sit amet euismod. 
-                Donec placerat rhoncus eros ac feugiat.
-              </Text>
-              <Text>
-
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Cras varius convallis dui sit amet euismod. 
-                Donec placerat rhoncus eros ac feugiat.
-              </Text>
+                }}>
+                <TextoBotaoPedido>
+                  Transporte para shows e eventos
+                  <Feather color="#F01" size={25} name="chevron-right" />
+                </TextoBotaoPedido>
+              </TouchableHighlight>
+              <TouchableHighlight
+               onPress={() => { alert(`Clique em Transporte para shows e eventos'`); }}
+                style={{
+                  height: 40,
+                  width: 260,
+                  borderRadius: 24,
+                  backgroundColor: '#fff',
+                  shadowColor: '#000',
+                  marginLeft: 50,
+                  marginRight: 50,
+                  elevation: 2,
+                  marginBottom:16,
+                }}>
+                <TextoBotaoPedido>
+                  Transporte para shows e eventos
+                  <Feather color="#F01" size={25} name="chevron-right" />
+                </TextoBotaoPedido>
+              </TouchableHighlight>
+              <TouchableHighlight
+               onPress={() => { alert(`Clique em Transporte para shows e eventos'`); }}
+                style={{
+                  height: 40,
+                  width: 260,
+                  borderRadius: 24,
+                  backgroundColor: '#fff',
+                  shadowColor: '#000',
+                  marginLeft: 50,
+                  marginRight: 50,
+                  elevation: 2,
+                  marginBottom:16,
+                }}>
+                <TextoBotaoPedido>
+                  Transporte para shows e eventos
+                  <Feather color="#F01" size={25} name="chevron-right" />
+                </TextoBotaoPedido>
+              </TouchableHighlight>
             </Content>
           </ContainerConteudo>
         </SafeAreaView>
