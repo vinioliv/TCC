@@ -34,8 +34,16 @@ import AnuncioReview from './pages/anuncio-reviews'
 import AnunciosService from './pages/anuncio-servicos'
 import SignUpAdress from './pages/signUpAdress/index'
 import RegisterProcutService from './pages/registerProductService/index'
-
-const MainTabs =  createBottomTabNavigator({
+import SignIn from './pages/signIn/index'
+import SingUp from './pages/signUp/index'
+const MainTabs =  
+createStackNavigator({
+  SignIn,
+  SingUp,
+  SignUpAdress,
+  RegisterProcutService,
+  HomeScreen 
+   :createBottomTabNavigator({
     HOME: {
       screen: createStackNavigator({
         HomeScreen,
@@ -100,6 +108,7 @@ const MainTabs =  createBottomTabNavigator({
       {
         navigationOptions: {
           tabBarLabel: 'HOME',
+          header: null,
           tabBarIcon: ({ tintColor }) => (
             <Feather size={20} color={tintColor} name="home" /> 
           )
@@ -146,23 +155,26 @@ const MainTabs =  createBottomTabNavigator({
           )
         },
         
-    },   
-    
+    }, 
   },
   {
     order: ['HOME', 'Buscar','Carrinho','Perfil','Menu'],
     tabBarOptions: {
-      showIcon: true,
+      showIcon: true, 
       activeTintColor: '#FF6969',
       inactiveTintColor: 'gray',
       style: {
         backgroundColor: 'white',
       }
     },
-  },
-  
-  
-  );
+  }, 
+  ) 
+
+}, {
+  headerMode: 'none',
+});
+
+
 
   
  const RoutesCtn = createAppContainer(MainTabs);

@@ -29,8 +29,10 @@ export default StyleSheet.create({
 
   adImg: {
     borderRadius: 10,
+  
     width: 380,
     zIndex: 1,
+    height: 152,
   },
   moreDetail: {
     width: 144,
@@ -56,27 +58,29 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   searchIcon: {
-    fontSize: 15,
+    fontSize: 25,
     color: '#707070',
-    marginLeft: 20,
+    marginRight: 10,
+    opacity:0.7
   },
   input: {
     paddingTop: 5,
     paddingRight: 10,
-    paddingBottom: 10,
+    paddingBottom: 5,
     paddingLeft: 5,
     fontSize: 15,
-    backgroundColor: '#E7EAF0',
+    backgroundColor: '#DCDCDC',
     color: '#707070',
     width: 230,
-    height: 30,
-    borderRadius: 2,
+    height: 40,
+    borderRadius: 8,
     borderColor: '#ddd',
     borderBottomWidth: 0,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.8,
     shadowRadius: 2,
+    marginLeft:8,
     elevation: 0.5,
   },
   filterIcon: {

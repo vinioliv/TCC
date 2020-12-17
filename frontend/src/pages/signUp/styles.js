@@ -4,7 +4,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-
+   
     backgroundColor: '#E7EAF0',
     alignItems: 'center',
   },
@@ -48,7 +48,7 @@ export default StyleSheet.create({
     borderRadius: 10,
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
-
+    paddingBottom:20,
     shadowColor: '#000',
     width: 300,
     fontSize: 15,
@@ -64,8 +64,8 @@ export default StyleSheet.create({
     paddingTop: 5,
     paddingRight: 10,
     paddingBottom: 10,
-    paddingLeft: 5,
-    height: 375,
+    paddingLeft: 10,
+    height: 385,
   },
 
   input: {
@@ -79,5 +79,6 @@ export default StyleSheet.create({
     marginTop: 10,
     alignSelf: 'center',
     alignItems: 'center',
+    marginBottom:20
   },
 });
